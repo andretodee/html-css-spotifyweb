@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside{
+  width: 230px;
+  height: 100%;
+  background-color: black;
+  float: left;
+}
+
+aside img{
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#menu{
+  color: grey;
+  margin-top: 30px;
+}
+
+.menu-item{
+  padding: 10px 0;
+  padding-left: 20px;
+}
+
+.menu-item:hover{
+  color: white;
+  border-left: 3px solid green;
+  text-decoration: none;
+}
+
+.menu-item i{
+  margin-right: 15px;
+}
+
+#recenti{
+  color: grey;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+#recenti p{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#recenti p:hover{
+  color: white;
+}
+
+#log-in{
+  color: grey;
+  margin-left: 20px;
+  font-size: 12px;
+  margin-top: 150%;
+}
+
+#log-in hr{
+
+  margin:15px 0;
+  margin-right: 20px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+}
+
+.options{
+  display: flex;
+  list-style: none;
+
+}
