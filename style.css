@@ -6,7 +6,7 @@
 
 body{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,9 +18,12 @@ body{
 
 aside{
   width: 230px;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 aside img{
@@ -86,6 +89,7 @@ main{
   width: 100%;
   height: 100%;
   background-color: grey;
+  padding-left: 230px;
 
 }
 
@@ -111,24 +115,84 @@ main{
   list-style: none;
 }
 
-.container-album{
+.container-h2{
   width: 60%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.container-album{
+  max-width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
 .album{
   width: 130px;
-  height: 130px;
-  background-color: white;
   margin: 10px;
+}
+
+.album img{
+  max-width: 100%;
+}
+
+.album p{
+  text-align: center;
+  color: white;
+
 }
 
 main h2{
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   margin-left: 200px;
+  margin-top: 50px;
+}
+
+#player{
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  color: grey;
+  display: flex;
+}
+
+.flex-item i{
+  margin: 5px 10px;
+}
+
+.flex-item i:hover{
+  color: white;
+}
+
+.little-album{
+  height: 50px;
+  width: 50px;
+}
+
+.little-album img{
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px;){
+   .options li{
+     display: none;
+   }
+
+
 }
