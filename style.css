@@ -90,7 +90,15 @@ main{
   height: 100%;
   background-color: grey;
   padding-left: 230px;
+  padding-bottom: 90px;
 
+}
+
+.hamburger i{
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  display: none;
 }
 
 .container-flex{
@@ -116,10 +124,8 @@ main{
 }
 
 .container-h2{
-  width: 60%;
+  max-width: 60%;
   margin: auto;
-  display: flex;
-  justify-content: center;
 }
 
 .container-album{
@@ -149,7 +155,6 @@ main{
 main h2{
   color: white;
   font-size: 40px;
-  margin-left: 200px;
   margin-top: 50px;
 }
 
@@ -172,6 +177,7 @@ main h2{
 
 .flex-item i{
   margin: 5px 10px;
+  line-height: 70px;
 }
 
 .flex-item i:hover{
@@ -185,14 +191,59 @@ main h2{
 
 .little-album img{
   width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.uno span{
+  margin: 15px 20px;
+  font-size: 14px;
+
 }
 
 
+@media screen and (max-width: 950px){
+  .options li{
+    display: none;
+  }
+  .hamburger i{
+    display: block;
+  }
+}
 
-@media screen and (max-width: 768px;){
-   .options li{
-     display: none;
+@media screen and (max-width: 768px){
+   .container-album{
+     max-width: 100%;
    }
 
+   .container-h2{
+     max-width: 100%;
+     margin-left: 10px;
+   }
+
+}
+
+@media screen and (max-width:580px){
+  .menu-item span{
+    display: none;
+  }
+  #recenti{
+    display: none;
+  }
+  #log-in span{
+    display: none;
+  }
+  aside{
+    width: 80px;
+  }
+  aside img{
+    display: none;
+  }
+  main{
+    padding-left: 80px;
+  }
+  h2{
+    font-size: 25px;
+  }
 
 }
